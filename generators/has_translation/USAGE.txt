@@ -1,0 +1,5 @@
+Usage:
+
+  script/generate translation Class name_of_field (name_of_filed_2 ...)
+
+This will create a migration that will add the proper columns to your class's table.
