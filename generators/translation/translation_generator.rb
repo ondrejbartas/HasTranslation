@@ -1,4 +1,4 @@
-class HasTranslationGenerator < Rails::Generator::NamedBase
+class TranslationGenerator < Rails::Generator::NamedBase
   desc "run this generator to add translations for your Class"
   attr_accessor :attachments, :migration_name
 
@@ -11,7 +11,7 @@ class HasTranslationGenerator < Rails::Generator::NamedBase
     file_name = generate_file_name
     @migration_name = file_name.camelize
     record do |m|
-      m.migration_template "has_translation_migration.rb.erb",
+      m.migration_template "translation_migration.rb.erb",
                            File.join('db', 'migrate'),
                            :migration_file_name => file_name
     end
