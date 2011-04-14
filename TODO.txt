@@ -1,0 +1,2 @@
+- dodelat generator lokalizaci
+- dodelat inicializaci lokales

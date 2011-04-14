@@ -11,9 +11,7 @@ class TranslationGenerator < Rails::Generators::NamedBase
     file_name = generate_file_name
     @migration_name = file_name.camelize
     record do |m|
-      m.migration_template "has_translation_migration.rb.erb",
-                           File.join('db', 'migrate'),
-                           :migration_file_name => file_name
+     m.migration_template "has_translation_migration.rb", "db/migrate", :migration_file_name => generate_file_name
     end
   end
 
