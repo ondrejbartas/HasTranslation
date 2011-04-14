@@ -1,4 +1,4 @@
-class HasTranslationGenerator < Rails::Generator::NamedBase
+class HasTranslationGenerator < Rails::Generators::NamedBase
   desc "run this generator to add translations for your Class"
   attr_accessor :translations, :migration_name
 
